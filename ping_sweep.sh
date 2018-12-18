@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ $1 == "" ]
+if [ "$1" == "" ]
 then
-echo "Usage: ./ping_sweep.sh [network]
-echo "Example: ./ping_sweep.sh 192.168.20
+echo "Usage: ./ping_sweep.sh [network]"
+echo "Example: ./ping_sweep.sh 192.168.20"
 else
 for x in {1..254}
 do
@@ -11,5 +11,3 @@ do
 	test $? -gt 128 && break;
 done
 fi
-
-
